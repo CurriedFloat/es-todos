@@ -2,20 +2,19 @@ import { appendToArray } from "../../support/helpers";
 import { add } from "./add";
 import { check } from "./check";
 import { remove } from "./remove";
-import { applyEvent } from "./state";
-
-import { TODO_ADD, TODO_REMOVE, TODO_CHECK } from "../_constants";
+import { state } from "./state";
+import { TODO_ADD, TODO_REMOVE, TODO_CHECK } from "../constants";
 
 export function commandHandlers(events, cmd) {
-  const state = events.reduce(applyEvent, new Map());
+  const todos = state(events);
   try {
     switch (cmd.type) {
       case TODO_ADD:
-        return appendToArray(events, add(state, cmd));
+        return appendToArray(events, add(todos, cmd));
       case TODO_CHECK:
-        return appendToArray(events, check(state, cmd));
+        return appendToArray(events, check(todos, cmd));
       case TODO_REMOVE:
-        return appendToArray(events, remove(state, cmd));
+        return appendToArray(events, remove(todos, cmd));
       default:
         throw new Error("Unsupported command");
     }

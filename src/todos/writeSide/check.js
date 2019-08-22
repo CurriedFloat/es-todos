@@ -1,4 +1,4 @@
-import { TODO_CHECKED } from "../_constants";
+import { TODO_CHECKED } from "../constants";
 
 export function check(s, cmd) {
   const id = cmd.id;

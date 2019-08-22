@@ -1,4 +1,4 @@
-import { TODO_ADDED, MIN_TEXT_LENGTH } from "../_constants";
+import { TODO_ADDED, MIN_TEXT_LENGTH } from "../constants";
 
 export function add(s, cmd) {
   const id = cmd.id;

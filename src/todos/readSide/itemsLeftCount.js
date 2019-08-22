@@ -1,4 +1,4 @@
-import { TODO_ADDED, TODO_REMOVED, TODO_CHECKED } from "../_constants";
+import { TODO_ADDED, TODO_REMOVED, TODO_CHECKED } from "../constants";
 
 export function itemsLeftCount(events) {
   const setOfUnfinished = new Set();

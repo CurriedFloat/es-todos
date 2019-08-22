@@ -1,5 +1,5 @@
 import { appendToArray, removeById, updateById } from "../../support/helpers";
-import { TODO_ADDED, TODO_REMOVED, TODO_CHECKED } from "../_constants";
+import { TODO_ADDED, TODO_REMOVED, TODO_CHECKED } from "../constants";
 
 export function todoList(events) {
   const emptyList = [];

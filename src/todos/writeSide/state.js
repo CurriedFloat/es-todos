@@ -1,7 +1,7 @@
 import { updateObject } from "../../support/helpers";
-import { TODO_ADDED, TODO_REMOVED, TODO_CHECKED } from "../_constants";
+import { TODO_ADDED, TODO_REMOVED, TODO_CHECKED } from "../constants";
 
-export function applyEvent(state, event) {
+function applyEvent(state, event) {
   const type = event.type;
   const id = event.id;
   switch (type) {
@@ -21,4 +21,8 @@ export function applyEvent(state, event) {
     default:
       return state;
   }
+}
+
+export function state(events) {
+  return events.reduce(applyEvent, new Map());
 }

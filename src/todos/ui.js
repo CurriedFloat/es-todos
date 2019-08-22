@@ -11,7 +11,7 @@ import {
   TODO_ADDED,
   TODO_REMOVED,
   TODO_CHECKED
-} from "./_constants";
+} from "./constants";
 
 function TodoList({ items, dispatch }) {
   return (

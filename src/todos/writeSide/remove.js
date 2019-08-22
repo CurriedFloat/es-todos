@@ -1,4 +1,4 @@
-import { TODO_REMOVED } from "../_constants";
+import { TODO_REMOVED } from "../constants";
 
 export function remove(s, cmd) {
   const id = cmd.id;
