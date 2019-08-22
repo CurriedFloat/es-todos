@@ -18,7 +18,7 @@ test("ADD", () => {
   expect(newEvents).toEqual([{ type: TODO_ADDED, id: 1, text: "todo a" }]);
 });
 
-test("ADD to short", () => {
+test("ADD too short", () => {
   const events = [];
   const command = { type: TODO_ADD, id: 1, text: "a" };
 
