@@ -1,0 +1,12 @@
+
+Pros of Event sourcing
+- Functional approach to state
+- Explicit state transitions
+- Easier for a domain expert to understand the event log than our RDB.
+- Temporal quering capabilities (time travel).
+- First level audit  
+  The data itself is a verifiable audit log.
+  Does not lose intent.
+- The storage system becomes an additive only architecture.
+  Append-only architectures distribute.
+  Far fewer locks to deal with.

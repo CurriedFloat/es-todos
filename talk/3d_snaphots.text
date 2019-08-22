@@ -1,0 +1,11 @@
+
+If deriving state on demand becomes to slow -> use the snapshot pattern.
+
+A snapshot is just a memoization of the fold up to a certain event.
+
+To derive state we find the latest snapshot and use it as the strating point 
+and apply all events that happend after.
+
+state = foldL(applyEvent, latestSnapshot, eventsAfterSnapshot)
+
+https://en.wikipedia.org/wiki/Memoization

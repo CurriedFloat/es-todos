@@ -1,0 +1,26 @@
+
+Event sourcing persists state in a non-destructive way. 
+Each state transition is repersented by an event and written to an append only log.
+Because changes are append only we can recreate the state of an 
+object at any point in its life cycle.
+
+Greg described event sourcing this way:
+"storing current state as a series of events and rebuilding state 
+within the system by replaying that series of events"
+
+state = foldL(applyEvent, state0, events)
+
+Event sourcing is by nature:
+Behavioral 
+Functional
+
+Event sourcing is not new, it predates computer-systems by thousands of years.
+Accounting for exampel is conceptually event sourced.
+
+Some industries known to used ES:
+Healthcare
+Banking
+Finance
+Insurance
+E-commerce
+Gambling

@@ -1,0 +1,15 @@
+
+CRUD (Create, Read, Update, Delete)
+
+Can be built very fast and UI forms etc can be generated automatically.
+Update covers a lot of usecases cheaply, loses intention.
+
+Data centric UIs can lead to business logic ending up in 
+the users head instead of in the code, not ideal from a modeling stand point. 
+Can also lead to so called grid abuse UIs (ex thin wrapper over SQL).
+
+For a lot of domains this is fine.
+Ex back office services/excelsheets operated by experienced employees
+
+Trade offs:
+  development costs VS onboarding costs and risk of knowledge loss.

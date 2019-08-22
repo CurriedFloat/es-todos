@@ -1,0 +1,35 @@
+
+Eventsourcing & CQRS
+https://eventstore.org/
+Greg on Eventsourcing talk https://www.youtube.com/watch?v=8JKjvY4etTY
+  write side performance https://www.youtube.com/watch?v=8JKjvY4etTY&feature=youtu.be&t=2607
+  es is not object oriented but functional https://youtu.be/8JKjvY4etTY?t=2667
+
+Gregs sample app https://github.com/gregoryyoung/m-r/tree/master/SimpleCQRS
+The LMAX Architecture https://martinfowler.com/articles/lmax.html
+https://docs.microsoft.com/en-us/previous-versions/msp-n-p/jj591559(v=pandp.10)
+https://docs.microsoft.com/en-us/previous-versions/msp-n-p/dn589792(v=pandp.10)
+https://scala-phase.org/talks/duncan-devore-cqrs/
+
+task based UIs
+http://www.h-online.com/developer/features/CQRS-an-architecture-precept-based-on-segregation-of-commands-and-queries-1803276.html%3Fpage=2
+https://cqrs.wordpress.com/documents/task-based-ui/
+
+eventstorming
+https://www.eventstorming.com/
+http://ziobrando.blogspot.com/2013/11/introducing-event-storming.html
+https://www.youtube.com/watch?v=NGXl1D-KwRI
+https://medium.com/@springdo/a-facilitators-recipe-for-event-storming-941dcb38db0d
+
+DDD
+blue book https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215
+wiki https://en.wikipedia.org/wiki/Domain-driven_design
+elixr talk https://youtu.be/l3VgbSgo71E?t=487
+
+Cool frameworks
+vlingo https://vlingo.io/
+lagomframework https://www.lagomframework.com/
+akka https://akka.io/
+https://doc.akka.io/docs/akka/current/persistence.html
+akka.Net https://getakka.net/ 
+resolve https://reimagined.github.io/resolve/

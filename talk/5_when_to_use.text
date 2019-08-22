@@ -1,0 +1,15 @@
+
+You do not have an eventsourced architecture!
+Event sourcing and cqrs are per service/bounded context decisions.
+
+Example DDD style system:
+Auth    -> third party -> so who cares
+Core    -> CQRS+ES
+Support -> CRUD
+
+Consider Event Sourcing + CQRS when doing:
+- rich domain models
+- version control for data
+- audit
+- business value or competitive advantage derived from event data
+- inherently event driven domains 

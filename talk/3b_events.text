@@ -1,0 +1,16 @@
+
+An event is an immutable message describing something that 
+happend in the past.
+It represents a fact of what has happend in the system.
+
+Should be represented as past tense verbs with some additional data 
+and an Id.
+
+Usually we store an event stream per aggregare root or similar concept outside of DDD, 
+it is not required but it is easier to work with than just having one BIG
+event stream.
+
+How do we find/discover our events?
+- Some will be obvious.
+- DDD and event storming should be considered. 
+

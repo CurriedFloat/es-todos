@@ -1,0 +1,22 @@
+
+Pros of CQRS  
+- Separation of read and write logic
+- Independent read / write scaling
+- Independent read / write optimization
+- Adding new views is easy.
+
+- We can make different CAP choices on the read and write side.
+  often we need stronger Consistency on the write side
+  and are okey with more relaxed consistency on the read side
+  ACID write side, and a BASE read side.
+
+  CAP (Consistency, Availability, Partition tolerance)
+    You can only have two properties
+  BASE (Basically Available, Soft state, Eventual consistency)
+    Sacrifices Consistency
+  ACID (Atomicity, Consistency, Isolation, Durability)
+    Sacrifices Partition tolerance
+
+Cons of CQRS
+- Increases overall size of system
+- Unfamiliar

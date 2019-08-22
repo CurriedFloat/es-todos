@@ -1,0 +1,29 @@
+  
+CQRS (Command Query Responsibility Segregation)
+
+Simple architectural pattern
+  Separates read and writes into different models 
+  (usually at the bounded context level or similar if not using DDD).  
+
+  Where once you had one Object with mixed read and write methods,
+  now you have TWO Objects, one with the read methods and one with the write methods.
+  Sometimes a single model encapsulating reads/writes does neither well.
+
+Command (write side)
+- Mutates state
+- Represent intention
+  unlike Update in CRUD 
+- Can be rejected 
+- Expressed in imperative language
+  "Shut up and take my money!"
+- Implemented as a message
+
+Query (read side)
+- Does not mutate state
+- Returns some data
+
+The movtivation (for Greg) of CQRS was to get people to look att their domains in different ways.
+To lead them to stuff like:
+- Event sourcing (write side of CQRS)
+- DDD stuff
+- Actors

@@ -1,0 +1,8 @@
+
+Cons of Event sourcing
+- Slow join type quries over multiple event streams -> fixed using CQRS.
+- Explicit use cases can be unnecessary/overkill.
+- Requires relaiable messaging infrastructure.
+- Unfamiliar.
+- Evolving events versioning.
+- Event Sourcing & Command Sourcing confusion.

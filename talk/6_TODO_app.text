@@ -1,0 +1,6 @@
+
+Go to /src/todos
+
+Also switch to the Tests tab in codesandbox, we are going to
+fix the failing tests. This is NOT a TDD drill, 
+the tests are only there to guide you. 
