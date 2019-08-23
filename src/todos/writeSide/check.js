@@ -1,6 +1,46 @@
 import { TODO_CHECKED } from "../constants";
 
 export function check(s, cmd) {
+  /* FIX */
+  return {};
+}
+
+/*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+export function check(s, cmd) {
   const id = cmd.id;
 
   if (!s.has(id)) throw new Error("id does not exist");
@@ -9,3 +49,4 @@ export function check(s, cmd) {
 
   return { type: TODO_CHECKED, id };
 }
+*/

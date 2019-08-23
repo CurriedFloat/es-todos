@@ -9,6 +9,59 @@ function applyEvent(state, event) {
       const text = event.text;
       return state.set(id, { text, checked: false });
     }
+    /* FIX */
+    default:
+      return state;
+  }
+}
+
+export function state(events) {
+  const initialState = new Map();
+  return events.reduce(applyEvent, initialState);
+}
+
+/*
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+function applyEvent(state, event) {
+  const type = event.type;
+  const id = event.id;
+  switch (type) {
+    case TODO_ADDED: {
+      const text = event.text;
+      return state.set(id, { text, checked: false });
+    }
     case TODO_REMOVED: {
       state.delete(id);
       return state;
@@ -22,7 +75,4 @@ function applyEvent(state, event) {
       return state;
   }
 }
-
-export function state(events) {
-  return events.reduce(applyEvent, new Map());
-}
+ */
